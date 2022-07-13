@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-2.css">
+    <title>Ahorcado Juego</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo-principal">Juego del Ahorcado</h1>
+    </header>
+    <main>
+        <div id="canvas-div">
+            <canvas id="canvas" width="300px" height="320px"></canvas>
+        </div>
+
+        <div id="contenedor-letras-guiones">
+            <div id="letras">
+                <ul id="lista-letras"></ul>
+            </div>
+
+            <div id="guiones">
+                <ul id="lista-guiones">
+                    <li class="guion">_</li>
+                    <li class="guion">_</li>
+                    <li class="guion">_</li>
+                    <li class="guion">_</li>
+                    <li class="guion">_</li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="cont-errores">
+            <label for="vidas" id="vidas" class="invisible">Cantidad de vidas<label id="cant-vidas"></label></label>
+            <ul id="lista-errores"></ul>
+        </div>
+
+        <div id="botones">
+            <button id="agregarPalabra" class="botones">Agregar Palabra</button>
+            <button id="nuevoJuego" class="botones">Nuevo Juego</button>
+        </div>
+        <div id="error-ingreso">
+            <span id="error-ing" class="invisible">Solo hasta 10 letras!</span>
+        </div>
+
+        <div id="div-input">
+            <input type="text" name="agregar-palabra" id="input-agregar-palabra"
+                placeholder="Escribe tu palabra Aquí, (Máximo 10 caracteres)" class="invisible" autocomplete='off'>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <span>Creado por Santiago Cortes, © Todos los derechos reservados 2022</span>
+    </footer>
+
+    <script src="js/agregarPalabra.js"></script>
+    <script src="js/nuevoJuego.js"></script>
+    <script src="js/validaciones.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/alertas.js"></script>
+    <script src="js/canvas.js"></script>
+</body>
+
+</html>

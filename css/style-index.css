@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap');
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url("/img/fondo-inicio.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;    
+}
+
+#titulo-principal{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #010453;
+    text-align: center;
+    margin-top: 4vh;
+    text-shadow: 2.5px 2.5px 2.5px #fff;
+}
+
+#boton-pag-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:500px;
+}
+
+.boton-inicio{
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
+    color: #010453;
+    border-color: #33a8ff;
+    box-shadow:0 10px 20px 7px #ffffff;
+    font-weight: bold;    
+}
+
+.boton-inicio:hover{
+    cursor: pointer;
+}
+
+#footer{
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    background-color: #010453;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px 10px 0px;;
+    position: absolute;
+    bottom: 5px;
+}
+
