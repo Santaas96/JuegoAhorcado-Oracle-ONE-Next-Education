@@ -6,7 +6,7 @@ html{
 }
 
 body{
-    background-image: url("/img/nubes.jpg");
+    background-image: url("../img/nubes.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
